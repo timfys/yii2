@@ -16,6 +16,11 @@ class SiteController extends Controller
      * {@inheritdoc}
      */
     
+    public function run(){
+        $model=new Activity;
+        return $this->render('create',['model'=>$model]);
+    }
+}
     public function behaviors()
     {
         return [
